@@ -225,6 +225,73 @@ body {
 }
 
 
+/*Флексы*/
+
+.header-page .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-navigation {
+    width: 520px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-basket {
+    width: 240px;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.main-navigation .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    margin-left: 50px;
+    margin-right: 100px;
+    padding: 0;
+}
+
+.catalog-columns {
+    display: flex;   
+}
+
+.right-column {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.left-column {
+    margin-left: 140px;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount {
+    margin-right: 300px;
+}
+
+
+
 
 
 
