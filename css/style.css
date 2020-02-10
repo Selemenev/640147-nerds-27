@@ -227,44 +227,62 @@ body {
 
 /*Флексы*/
 
-.header-page .main-navigation {
+html,
+body {
+    min-width: 1440px;
+    min-height: 2576px;
+
+}
+
+.main-header {
+     margin-bottom: 80px;
+
+}
+
+.main-navigation {
+    width: 100%;
+}
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+    margin-left: 140px;
+    margin-top: 49px;
+ }
+
+.site-navigation {
+    width: 438px;
+    margin-top: 83px;
+    margin-right: 500px;
+    padding: 0;
+    list-style: none;
+}
+
+.user-basket {
+    margin-top: 83px;
+    margin-right: 140px;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-header .main-navigation {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.site-navigation {
-    width: 520px;
-    margin: 0;
-    padding: 0;
-}
-
-.user-basket {
-    width: 240px;
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-
-    width: 1140px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-
-.main-navigation .container {
-    display: flex;
-    justify-content: space-between;
+.navigation-wrapper {
+  width: 100%;
 }
 
 .offers-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
-
-    margin-left: 50px;
-    margin-right: 100px;
+    
+    margin: 0;
     padding: 0;
 }
 
@@ -281,13 +299,12 @@ body {
     margin-left: 140px;
 }
 
-.main-footer .container {
-    display: flex;
-    justify-content: space-between;
+.discount {
+    margin-left: 539px;
 }
 
-.discount {
-    margin-right: 300px;
+.footer-social {
+    display: flex;
 }
 
 
