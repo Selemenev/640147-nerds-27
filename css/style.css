@@ -13,7 +13,12 @@ body {
     background-repeat: no-repeat;
 }
 
-.header-page h1 {
+.main-navigation a {
+    text-decoration: none;
+}
+
+.main-navigation h1 {
+    margin-top: 80px;
     text-transform: none;
     font-weight: 400;
     font-size: 55px;
@@ -28,7 +33,13 @@ body {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+}
+.main-header {
+    background-color: #eeeeee;
+    
+}
 
+.catalog-header {
     background-color: #eeeeee;
 }
 
@@ -159,14 +170,14 @@ body {
     border: none;
 }
 
-.main-footer h2 {
+.discount h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
     color: #000000;
 }
 
-.main-footer h3 {
+.discount h3 {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -229,40 +240,76 @@ body {
 
 html,
 body {
-    min-width: 1440px;
-    min-height: 2576px;
+    width: 1440px;
+    height: 100vh;
 
 }
 
-.main-header {
-     margin-bottom: 80px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden; 
+}
 
+.main-header {
+    width: 100%;
+    min-height: 545px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+
+.catalog-header {
+    width: 100%;
+    min-height: 355px;
+    border: 1px solid #000000;
 }
 
 .main-navigation {
     width: 100%;
+    list-style: none;
+    border: 1px solid #000000;
+    
 }
 .main-header-logo {
     width: 160px;
     height: 65px;
-    margin-left: 140px;
-    margin-top: 49px;
+    padding: 0;
  }
 
 .site-navigation {
     width: 438px;
-    margin-top: 83px;
-    margin-right: 500px;
+    margin-right: 286px;
+    margin-left: 202px;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;   
 }
 
 .user-basket {
-    margin-top: 83px;
-    margin-right: 140px;
     padding: 0;
+    margin-top: 15px;
 }
+
+.user-basket-logo {
+    
+    margin-right: 26px;
+    margin-top: 15px;
+}
+
 .container {
+    border: 1px solid #000000;
+    width: 1160px;
+    margin-left: 140px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -271,6 +318,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #000000;   
 }
 
 .navigation-wrapper {
@@ -280,31 +328,70 @@ body {
 .offers-list {
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    
-    margin: 0;
+    width: 1100px;
     padding: 0;
+    margin-left: 140px;
+    list-style: none;
+   
+}
+
+.offers-item {
+    list-style: none;
+    border: 1px solid #000000;
+    padding: 0;
+
+}
+
+.product-filter {
+    margin-top: 327px;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #000000;
 }
 
 .catalog-columns {
-    display: flex;   
+     width: 1160px;
+     margin-left: 142px;
+    display: flex; 
+    justify-content: space-between;  
+    list-style: none;
+    border: 1px solid #000000;
 }
 
 .right-column {
-    margin-top: 60px;
-    margin-left: 20px;
+    margin-top: 133px;
+    padding: 0;
+    list-style: none;   
 }
 
 .left-column {
-    margin-left: 140px;
+    margin-top: 133px;
+    padding: 0;
+    list-style: none;
 }
 
-.discount {
-    margin-left: 539px;
+.main-footer {
+    width: 1440px;  
 }
 
 .footer-social {
     display: flex;
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+.discount {
+    margin-left: 140px;
+    border: 1px solid #000000;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 261px;
+    height: 79px;
+    margin-left: 142px;
+    border: 1px solid #000000;
 }
 
 
