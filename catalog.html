@@ -34,7 +34,7 @@
       </nav>
     </header>
     <main class="major-catalog">
-
+    <div class="main-catalog-columns">
     <div class="catalog-columns">
 
      <section class="product-filter">
@@ -162,32 +162,39 @@
         </div>
       </div>
      </section>
+    </div>
 
      <h2 class="visually-hidden">Обратная связь</h2>
 
-      <section class="feedback">
-        <div class="feedback-item">
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+     <section class="feedback">
+      <div class="feedback-item">
+       <h2>Напишите нам</h2>
 
-        <h2>Напишите нам</h2>
-         <ul class="contacts">
-          <li class="your-name">
-           <label for="contact-name">Ваше имя:</label>
-           <input class="login-area" type="text" name="login" id="contact-name" placeholder="Имя Фамилия">
+       <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <ul class="contacts">
+         <li class="your-name">
+          <p>
+          <label for="contact-name">Ваше имя:</label>
+          </p>
+          <input class="login-area" type="text" name="login" id="contact-name" placeholder="Имя Фамилия">
           </li>
           <li class="your-mail">
+           <p>
            <label for="contact-e-mail">Ваш email:</label>
+           </p>
            <input class="email-area" type="text" name="e-mail" id="contact-e-mail" placeholder="email@example.ru">
           </li>
-         </ul>         
+         </ul>
+        <div class="your-text">       
          <p>
-           <label for="contact-letter">Текст письма:</label>
-           <textarea class="feedback-area" name="text" id="contact-letter" placeholder="В свободной форме"></textarea>
-         </p>
-         <button class="button feedback-button" type="submit">Отправить</button>
-       </form>
+         <label for="contact-letter">Текст письма:</label>
+         </p>  
+         <textarea class="feedback-area" name="text" id="contact-letter" placeholder="В свободной форме"></textarea>
+        </form>
        </div>
-      </section>
+       <button class="button feedback-button" type="submit">Отправить</button>
+     </div>
+    </section>
 
       <div class="map">
         <img src="img/dec/2.jpg" name="Карта" width="1440px" height="416px">
