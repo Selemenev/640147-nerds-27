@@ -282,6 +282,7 @@ body {
    width: 100%;
 }
 
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -366,8 +367,10 @@ body {
 .offers {
     
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .offers-list {
@@ -376,6 +379,7 @@ body {
 
     display: flex;
     list-style: none; 
+    
       
     
 }
@@ -407,28 +411,31 @@ body {
     margin-right: 100px;
 }
 
-.product-filter {
-    margin-top: 327px;
-    padding: 0;
-    list-style: none;
- 
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
 }
 
-.main-catalog-columns {
-    display: flex;
-    justify-content: center;
+.product-filter {
+    margin-top: 327px;
+    margin-right: 140px;
+    padding: 0;
+    list-style: none;
 }
 
 .catalog-columns {
-     width: 1160px;
+     
     display: flex; 
+    justify-content: center;
     list-style: none;
-    
 }
-
+    
 .products {
-    display: flex;
-    flex-direction: column; 
+    width: 760px;
+    margin-top: 60px;
+    
 }
 
 .catalog-list {
@@ -436,16 +443,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
-    margin-left: 140px;  
-
+    padding: 0; 
 }
 
 .sort {
     width: 760px;
-    margin-left: 140px; 
-    margin-top: 63px;  
-    margin-bottom: 59px;
+    margin-bottom: 57px; 
 }
 
 .sort-list {
@@ -454,6 +457,8 @@ body {
    list-style: none; 
    padding: 0;
    margin: 0;
+   
+   
 }
 
 .feedback-item {
@@ -476,7 +481,7 @@ body {
 .your-name {
     display: flex;
     flex-direction: column;
-    
+   
 }
 
 .your-mail {
@@ -497,14 +502,16 @@ body {
     margin: 0;
 }
 
-.main-footer {
-    width: 1440px;  
-    
+.main-footer { 
+   width: 100%; 
+   display: flex;
+   
 }
 
 .footer-social {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .discount {
@@ -514,7 +521,6 @@ body {
 .social {
     width: 261px;
     height: 79px;
-    margin-left: 140px;
     padding: 0;
 
     display: flex;
