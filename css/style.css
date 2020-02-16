@@ -380,8 +380,6 @@ body {
     display: flex;
     list-style: none; 
     
-      
-    
 }
 
 .offers-item figure {
@@ -412,10 +410,11 @@ body {
 }
 
 .main-page {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #000000;
 }
 
 .product-filter {
@@ -435,7 +434,6 @@ body {
 .products {
     width: 760px;
     margin-top: 60px;
-    
 }
 
 .catalog-list {
@@ -457,8 +455,6 @@ body {
    list-style: none; 
    padding: 0;
    margin: 0;
-   
-   
 }
 
 .feedback-item {
@@ -475,13 +471,11 @@ body {
     display: flex;  
     list-style: none;
     justify-content: space-between;
-    
 }
 
 .your-name {
     display: flex;
     flex-direction: column;
-   
 }
 
 .your-mail {
@@ -497,7 +491,6 @@ body {
 }
 
 .map {
-    
     padding: 0;
     margin: 0;
 }
@@ -505,7 +498,6 @@ body {
 .main-footer { 
    width: 100%; 
    display: flex;
-   
 }
 
 .footer-social {
@@ -525,19 +517,23 @@ body {
 
     display: flex;
     align-items: center;
-    background-color: #e1e1e1;
+    
 }
 
 .vk-icon {
+    
     padding-left: 27px;
+    background-color: #e1e1e1;
 }
 
 .fb-icon {
 padding-left: 72px;
+background-color: #e1e1e1;
 }
 
 .inst-icon {
     padding-left: 73px;
+    background-color: #e1e1e1;
 }
 
 
