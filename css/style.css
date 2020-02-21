@@ -243,146 +243,6 @@ body {
 .catalog-list {
     list-style: none;
 }
-/* Всплывающее окно */
-
-.feedback h2 {
-    margin-top: 73px;
-    margin-left: 100px;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 45px;
-    color: #000000;
-}
-
-.feedback .your-text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    color: #000000;
-}
-
-.contacts li {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 0;  
-}
-
-.feedback-area {
-    box-sizing: border-box;
-    opacity: 50%;
-    margin-top: 12px;
-    padding: 0;
-    width: 760px;
-    height: 118px;
-    border: 2px solid #d7dcde;  
-}
-
-.login-area {
-    opacity: 50%;
-    box-sizing: border-box;
-    margin-top: 12px;
-    padding: 0;
-    width: 360px;
-    height: 50px;
-    border: 2px solid #d7dcde;
-}
-
-.email-area {
-    opacity: 50%;
-    box-sizing: border-box;
-    margin-top: 12px;
-    padding: 0;
-    width: 360px;
-    height: 50px;
-    border: 2px solid #d7dcde;
-}
-
-.feedback {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.feedback-item {
-    
-    width: 960px;
-    height: 590px;
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    align-content: center;
-
-    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-    
-}
-
-.modal-close {
-    width: 21px; 
-    height: 21px;
-    top: 1535px;
-    left: 1320px;
-    position: absolute;
-    cursor: pointer;
-
-    
-    background-image: url("/img/dec/close-cross.svg");
-    opacity: 30%;
-    border: 0;
-}
-
-.map {
-    padding: 0;
-    margin: 0;
-}
-
-.contacts {
-    padding: 0;
-    margin-left: 100px;
-    margin-top: 0px;
-    width: 760px;
-    display: flex;  
-    list-style: none;
-    justify-content: space-between;
-     
-    
-}
-
-.your-name {
-    display: flex;
-    flex-direction: column;
-}
-
-.your-mail {
-    display: flex;
-    flex-direction: column;
-}
-
-.your-text {
-    width: 760px;
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 47px;
-    margin-top: 27px;
-}
-
-/*Флексы*/
-
-html,
-body {
-    width: 100%;
-    height: 100vh;
-}
-
-.major,
-.major-catalog {
-   width: 100%;
-}
-
 
 .visually-hidden {
     position: absolute;
@@ -440,53 +300,6 @@ body {
     margin-right: 26px;
 }
 
-/* Баннера*/
-
-
-.banner-1 h1 {
-    padding: 0;
-    text-transform: none;
-    font-weight: 400;
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-}
-
-.banner-1 {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 18px;
-    width: 1129px;
-    height: 413px;
-    
-}
-
-.baner-1-text {
-    text-align: left;
-    padding: 0;
-    margin-bottom: 18px;
-}
-
-
-.banner-1-text p {
-    padding: 0;
-    margin-bottom: 42px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #283136;
-}
-
-.banner-1 figure{
-    margin: 0;
-    padding: 0;  
-}
-
-/**/
-
 .container {
     width: 1160px;
     margin-top: 49px;
@@ -512,12 +325,104 @@ body {
     margin-bottom: 116px;
 }
 
+/* Баннера*/
+
+
+.banner-1 h1,
+.banner-2 h1,
+.banner-3 h1 {
+    padding: 0;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.banner-1 {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    width: 1129px;
+    height: 413px;   
+}
+
+.banner-2 {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    width: 1159px;
+    height: 430px;   
+}
+
+.banner-3 {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    width: 1159px;
+    height: 411px;   
+}
+
+.banner-1-text,
+.banner-2-text,
+.banner-3-text {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+
+.banner-1-text p,
+.banner-2-text p,
+.banner-3-text p {
+    padding: 0;
+    margin-bottom: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+}
+
+.banner-1 figure,
+.banner-2 figure,
+.banner-3 figure {
+    margin: 0;
+    padding: 0;  
+}
+
+.slide {
+    background-color: #eeeeee;
+}
+
+/*Флексы*/
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.major,
+.major-catalog {
+   width: 100%;
+}
+
+/*Блок offers*/
+
 .offers {
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     
 }
 
@@ -556,6 +461,146 @@ body {
 .offers-item:nth-child(2) {
     margin-right: 100px;
 }
+
+/*Реклама*/ 
+
+.ad h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;  
+}
+
+.ad p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;  
+}
+
+.ad {
+    border-top: 2px solid #eeeeee;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    width: 1160px;
+    margin-top: 80px;
+    padding-top: 40px;
+}
+
+.offers-text {
+    border-bottom: 2px solid #eeeeee;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    width: 1160px;
+    padding: 0;
+    padding-bottom: 76px;
+    margin: 0;
+    margin-top: 41px;
+}
+
+.orders {
+    width: 429px;
+    height: 160px;
+    padding: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136; 
+     
+}
+
+.orders p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.orders-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.orders-list li {
+    margin-bottom: 22px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.statistics p {
+    text-transform: uppercase;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    padding: 0;
+    margin: 0;
+
+    margin-left: 14px;
+    margin-bottom: 49px;
+}
+
+.statistics-procent {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 27px;
+    width: 305px;
+      
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 10px;
+    color: #000000;
+}
+
+.statistics-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #283136;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-block-logo {
+    width: 1160px;
+    padding: 0;
+    margin: 0;
+    padding-top: 46px;
+    padding-bottom: 44px;
+    margin-bottom: 80px;
+
+    border-bottom: 2px solid #eeeeee;
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/*главная-Каталога*/
 
 .main-page {
     margin: 0;
@@ -605,6 +650,8 @@ body {
    margin: 0;
 }
 
+/*Футер*/
+
 .main-footer { 
    width: 100%; 
 }
@@ -645,5 +692,126 @@ body {
     align-items: center;
     width: 79px;
     height: 79px;
+}
+
+/* Всплывающее окно */
+
+.feedback h2 {
+    margin-top: 73px;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.feedback .your-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.contacts li {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0;  
+}
+
+.feedback-area {
+    box-sizing: border-box;
+    opacity: 50%;
+    margin-top: 12px;
+    padding: 0;
+    width: 760px;
+    height: 118px;
+    border: 2px solid #d7dcde;  
+}
+
+.login-area {
+    opacity: 50%;
+    box-sizing: border-box;
+    margin-top: 12px;
+    padding: 0;
+    width: 360px;
+    height: 50px;
+    border: 2px solid #d7dcde;
+}
+
+.email-area {
+    opacity: 50%;
+    box-sizing: border-box;
+    margin-top: 12px;
+    padding: 0;
+    width: 360px;
+    height: 50px;
+    border: 2px solid #d7dcde;
+}
+
+.feedback {
     
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-item {
+    
+    width: 960px;
+    height: 590px;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-content: center;
+
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-close {
+    width: 21px; 
+    height: 21px;
+    position: absolute;
+    cursor: pointer;
+
+    background-image: url("/img/dec/close-cross.svg");
+    opacity: 30%;
+    border: 0;
+}
+
+.map {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts {
+    padding: 0;
+    margin-left: 100px;
+    margin-top: 0px;
+    width: 760px;
+    display: flex;  
+    list-style: none;
+    justify-content: space-between;
+}
+
+.your-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.your-mail {
+    display: flex;
+    flex-direction: column;
+}
+
+.your-text {
+    width: 760px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 47px;
+    margin-top: 27px;
 }
