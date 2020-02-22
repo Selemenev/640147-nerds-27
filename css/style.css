@@ -173,6 +173,23 @@ body {
     border-radius: 3px;
 }
 
+.button-on-map {
+    text-transform: uppercase;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #fb565a;
+    width: 219px;
+    height: 50px;
+    
+    border: none;
+    border-radius: 3px; 
+}
+
 .feedback-button {
     text-transform: uppercase;
 
@@ -208,9 +225,6 @@ body {
     color: #444444;
 }
 
-.social {
-    list-style: none;
-}
 
 .product-filter h3 {
     text-transform: uppercase;
@@ -597,6 +611,7 @@ body {
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
     
 }
 
@@ -652,11 +667,13 @@ body {
 
 /*Футер*/
 
-.main-footer { 
-   width: 100%; 
+.footer-social {
+    margin-top: 69px;
 }
 
 .main-footer {
+    width: 100%; 
+
     display: flex;
     width: 100%;
     justify-content: center;
@@ -667,8 +684,9 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 139px;
-    margin-top: 30px;
     justify-content: space-evenly;
+
+    margin-top: 78px;
     padding: 0;
     
 }
@@ -694,7 +712,57 @@ body {
     height: 79px;
 }
 
-/* Всплывающее окно */
+/* Карта и Всплывающее окно */
+
+.map {
+    
+    padding: 0;
+    margin: 0;
+}
+
+.window-on-map {
+    width: 319px;
+    height: 308px;
+    text-align: center;
+
+    background-color: #ffffff;
+
+    position: absolute;
+
+    top: 54px;
+    left: 373px;
+}
+
+.window-on-map h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 54px;
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.window-on-map p {
+    padding: 0;
+    margin: 0;
+    
+    margin-bottom: 37px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.map-marker {
+    position: absolute;
+
+    top:89px;
+    left: 1050px;
+}
 
 .feedback h2 {
     margin-top: 73px;
@@ -762,7 +830,7 @@ body {
 .feedback-item {
     position: absolute;
 
-    top: -150px;
+    top: -140px;
     
     width: 960px;
     height: 590px;
@@ -788,11 +856,6 @@ body {
     background-image: url("/img/dec/close-cross.svg");
     opacity: 30%;
     border: 0;
-}
-
-.map {
-    padding: 0;
-    margin: 0;
 }
 
 .contacts {
