@@ -14,17 +14,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden; 
-}
-
 .main-navigation a {
     text-decoration: none;
 }
@@ -239,15 +228,45 @@ body {
 
 .product-filter h3 {
     text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 27px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     text-align: left;
     color: #000000;
-    
+}
+
+.product-filter-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #283136;
+
+    list-style: none;
+}
+
+.sort-list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    color: #000000;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden; 
 }
 
 .main-header {
@@ -262,7 +281,8 @@ body {
 .catalog-header {
     display: flex;
     justify-content: center;
-    min-height: 355px;  
+    min-height: 355px;
+    
 }
 
 .main-navigation {
@@ -606,175 +626,44 @@ body {
 }
 
 .product-filter {
-    margin: 0;
-    padding: 0;
+    margin-top: 327px;
     margin-right: 140px;
-    margin-top: 60px;
-    
-}
-
-.range input {
-    width: 219px;
-    height: 2px;
-    margin-top: 40px; 
-}
-
-.range-area {
-    width: 261px;
-    height: 81px;
-    margin-bottom: 13px;
-    margin-top: 56px;
-    border-radius: 3px;
-    background-color: #eeeeee;
-    text-align: center;
-    
-}    
-
-.outputs {
-    margin-bottom: 60px;
-    display: flex;
-    align-items: center;
-    
-}
-
-.outputs p {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    margin-right: 12px;
-}   
-
-
-.output-area-to {
-    background-color: #eeeeee;
-    width: 80px;
-    height: 38px;
-    margin-right: 33px;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    border-radius: 3px;
-    text-align: center;
-    
-}
-
-.output-area-from {
-    background-color: #eeeeee;
-    width: 80px;
-    height: 38px;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    border-radius: 3px;
-    text-align: center;
-}
-
-.product-filter-list {
-    margin: 0;
     padding: 0;
-    margin-bottom: 50px; 
-}
-
-.product-filter-list-s {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 53px;
-}
-
-.product-filter-item {
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 16px;
-
-    text-align: left;
-    color: #283136;
-
     list-style: none;
-}
-
-.sort-list {
-   display: flex; 
-   list-style: none; 
-   padding: 0;
-   margin: 0;
-   margin-top: 60px;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 18px;
-   color: #000000;
-   
-}
-
-.sort-item {
-   padding: 0;
-   margin: 0;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 18px;
-   color: #000000;
-   text-transform: uppercase;
-}
-
-.sort-item:nth-child(3) {
-    margin-right: 25px;
-    margin-left: 27px;
-}
-
-.sort-item:nth-child(5) {
-    margin-right: 18px;
-    margin-left: 46px;
-}
-
-.sort-item:first-child {
-    margin-right: 267px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-
-
-.catalog-item {
-    
-    padding: 0;
-    margin: 0;
-    outline: 1px solid #000000;
-    
 }
 
 .catalog-columns {
-    padding: 0;
-    margin: 0;
+     
     display: flex; 
     justify-content: center;
     list-style: none;
-    
 }
     
 .products {
     width: 760px;
-    margin: 0;
-    padding: 0;
+    margin-top: 60px;
 }
 
 .catalog-list {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
-    padding: 0;  
-    margin: 0;
-    outline: 1px solid #000000;
+    padding: 0; 
 }
 
+.sort {
+    width: 760px;
+    margin-bottom: 57px; 
+}
+
+.sort-list {
+   display: flex; 
+   justify-content: space-between;
+   list-style: none; 
+   padding: 0;
+   margin: 0;
+}
 
 /*Футер*/
 
@@ -826,7 +715,7 @@ body {
 /* Карта и Всплывающее окно */
 
 .map {
-    position: relative;
+    
     padding: 0;
     margin: 0;
 }
@@ -841,7 +730,7 @@ body {
     position: absolute;
 
     top: 54px;
-    left: 140px;
+    left: 373px;
 }
 
 .window-on-map h3 {
@@ -872,7 +761,7 @@ body {
     position: absolute;
 
     top:89px;
-    left: 820px;
+    left: 1050px;
 }
 
 .feedback h2 {

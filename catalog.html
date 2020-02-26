@@ -38,66 +38,72 @@
       <h1 class="visually-hidden">Каталог сайтов</h1>
 
     <div class="main-page">
-    <div class="catalog-columns">
+     <div class="catalog-columns">
      <section class="product-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="get"
+         oninput="daysoutput.value=dayscount.value">
 
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <div class="range">
+          <h3>Стоимость:</h3>
+          <div class="range-area">
+           <input type="range" name="dayscount" min="0" max="30000" step="1000" value="0,15000"/>
+          </div>
+          <div class="outputs">
+            <p>От</p>
+          <div class="output-area-to">
+            <output name="daysoutput0">0</output>
+          </div>
+            <p>До</p>
+          <div class="output-area-from">
+            <output name="daysoutput">15000</output>
+          </div>
+        </div>
+
+        </div>
           <h3>Сетка:</h3>
-          <ul>
+          <ul class="product-filter-list-s">
             <li class="product-filter-item">
-              <label>
-             <input type="radio" name="адаптивная" checked>Адаптивная
+              <label for="adaptiv">
+             <input type="radio" name="filter-group" id="adaptiv" checked>Адаптивная
             </label>
-            </li>
-          </ul> 
-          <ul>
+            </li>         
             <li  class="product-filter-item">
-              <label>
-             <input type="radio" name="фиксированная">Фиксированная
+              <label for="fix">
+             <input type="radio" name="filter-group" id="fix">Фиксированная
             </label>
-            </li>
-          </ul> 
-          <ul>
+            </li>         
             <li  class="product-filter-item">
-            <label>
-             <input type="radio" name="резиновая">Резиновая
+            <label for="buble">
+             <input type="radio" name="filter-group" id="buble">Резиновая
             </label>
             </li>
           </ul> 
           <h3>Особенности:</h3>
-          <ul>
+          <ul class="product-filter-list">
             <li  class="product-filter-item">
-            <label>
-              <input type="checkbox" name="Слайдер" checked>Слайдер
+            <label for="slyder">
+              <input type="checkbox" name="Слайдер" id="slyder"checked>Слайдер
             </label>
             </li>
-          </ul>
-          <ul>
             <li  class="product-filter-item">
-            <label>
-              <input type="checkbox" name="Блок приемуществ">Блок приемуществ
+            <label for="block">
+              <input type="checkbox" name="Блок приемуществ" id="block">Блок приемуществ
             </label>
             </li>
-          </ul>
-          <ul>
             <li  class="product-filter-item">
-            <label>
-              <input type="checkbox" name="Новости" checked>Новости
+            <label for="news">
+              <input type="checkbox" name="Новости" id="news" checked>Новости
             </label>
             </li>
-          </ul>
-          <ul>
             <li  class="product-filter-item">
-            <label>
-              <input type="checkbox" name="Галерея">Галерея
+            <label for="galery">
+              <input type="checkbox" name="Галерея" id="galery">Галерея
             </label>
             </li>
-          </ul>
-          <ul>
             <li  class="product-filter-item">
-            <label>
-              <input type="checkbox" name="Корзина">Корзина
+            <label for="basket">
+              <input type="checkbox" name="Корзина" id="basket">Корзина
             </label>
             </li>
           </ul>
@@ -106,52 +112,62 @@
      </section>
 
      <section class="products">
-      <div class="sort">
+       
         <ul class="sort-list">
+           <li class="sort-item"> 
             Сортировать:
-          <li>
+           </li>
+           <li class="sort-item">
             По цене
-          </li>
-          <li>
+           </li>
+           <li class="sort-item">
             По типу
-          </li>
-          <li>
+           </li>
+           <li class="sort-item">
             По названию
-          </li>  
+           </li>  
+           <li class="sort-item">
+             <img src="img/dec/icon-down-dir.png">
+           </li>
+           <li class="sort-item">
+            <img src="img/dec/icon-up-dir1.png">
+          </li>
          </ul> 
-        </div>
+        
         <ul class="catalog-list">
-         <li>
+         <li class="catalog-item">
+           
           <a href="#">
            <img src="img/cnt/img-sedona-jpg.jpg" width="360" height="576"
             alt="Седона">
+           
           </a>
-         </li>
+         </li class="catalog-item">
          <li>
           <a href="#">
            <img src="img/cnt/img-pink-jpg.jpg" width="360" height="576"
             alt="Пинк">
           </a>
          </li>
-         <li>
+         <li class="catalog-item">
           <a href="#">
            <img src="img/cnt/img-barbershop-jpg.jpg" width="360" height="576"
             alt="Барбершоп">
           </a>
          </li>
-         <li>
+         <li class="catalog-item">
           <a href="#">
            <img src="img/cnt/img-mishka-jpg.jpg" width="360" height="576"
             alt="Мишка">
           </a>
          </li>
-         <li>
+         <li class="catalog-item">
           <a href="#">
            <img src="img/cnt/img-aplus-jpg.jpg" width="360" height="576"
             alt="Аплюс">
           </a>
          </li>
-         <li>
+         <li class="catalog-item">
           <a href="#">
            <img src="img/cnt/img-kvast-jpg.jpg" width="360" height="576"
             alt="Кваст">
@@ -163,63 +179,67 @@
     </div>
      
 
-     <h2 class="visually-hidden">Обратная связь</h2>
+    <h2 class="visually-hidden">Обратная связь</h2>
 
      <section class="feedback">
       <div class="map">
         <img src="img/dec/2.jpg" name="Карта">
+        <div class="window-on-map">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>
+            191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенная, д. 19/8<br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <button class="button button-on-map">Напишите нам</button>
+        </div>
+        <div class="map-marker">
+          <img src="img/dec/map-marker.png">
+        </div>
       </div>
-      <div class="feedback-item">
+     
+      <div class="feedback-item visually-hidden">
        <h2>Напишите нам</h2>
        <form action="https://echo.htmlacademy.ru/courses" method="post">
         <ul class="contacts">
          <li class="your-name">
-          
           <label for="contact-name">Ваше имя:</label>
-          
           <input class="login-area" type="text" name="login" id="contact-name" placeholder="Имя Фамилия">
           </li>
           <li class="your-mail">
-           
            <label for="contact-e-mail">Ваш email:</label>
-           
            <input class="email-area" type="text" name="e-mail" id="contact-e-mail" placeholder="email@example.ru">
           </li>
          </ul>
-        <div class="your-text">       
-         
+        <div class="your-text">      
          <label for="contact-letter">Текст письма:</label>
-          
          <textarea class="feedback-area" name="text" id="contact-letter" placeholder="В свободной форме"></textarea>
-        </form>
+         </form>
+        </div>
+         <button class="button feedback-button" type="submit">Отправить</button>
+         <button class="modal-close" type="button"></button>
        </div>
-       <button class="button feedback-button" type="submit">Отправить</button>
-     </div>
-     
-    </section>
-    </main>
+      </section>
+   </main>
 
-    <footer class="main-footer">
-      <div class="footer-social">
-       <ul> 
-        <li><a class="social-button" href="#">
-          <img src="img/dec/vk-icon.svg" width="26" height="15">
-        </a></li>
-        <li><a class="social-button" href="#">
-          <img src="img/dec/fb-icon.svg" width="12" height="22">
-        </a></li>
-        <li><a class="social-button" href="#">
-          <img src="img/dec/insta-icon.svg" width="21" height="21">
-        </a></li>
-       </ul>  
-      </div>
-       <div class="discount">
-         <p>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <h3>Скидка 10% для друзей из социальных сетей.</h3>
-        </p>
-       </div>
-       
-    </footer>
+   <footer class="main-footer">
+    <div class="footer-social">
+     <ul> 
+      <li><a class="social-button" href="#">
+        <img src="img/dec/vk-icon.svg" width="26" height="15">
+      </a></li>
+      <li><a class="social-button" href="#">
+        <img src="img/dec/fb-icon.svg" width="12" height="22">
+      </a></li>
+      <li><a class="social-button" href="#">
+        <img src="img/dec/insta-icon.svg" width="21" height="21">
+      </a></li>
+     </ul>  
+    </div>
+     <div class="discount">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <h3>Скидка 10% для друзей из социальных сетей.</h3>
+     </div>
+  </footer>
  </body>
 </html>
