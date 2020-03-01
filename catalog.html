@@ -51,21 +51,21 @@
           </div>
           <div class="outputs">
             <p>От</p>
-          <div class="output-area-to">
+          
             <output name="daysoutput0">0</output>
-          </div>
+          
             <p>До</p>
-          <div class="output-area-from">
+          
             <output name="daysoutput">15000</output>
-          </div>
+          
         </div>
 
         </div>
           <h3>Сетка:</h3>
           <ul class="product-filter-list-s">
             <li class="product-filter-item">
-              <label for="adaptiv">
-             <input type="radio" name="filter-group" id="adaptiv" checked>Адаптивная
+              <label for="adaptive">
+             <input type="radio" name="filter-group" id="adaptive" checked>Адаптивная
             </label>
             </li>         
             <li  class="product-filter-item">
@@ -82,28 +82,34 @@
           <h3>Особенности:</h3>
           <ul class="product-filter-list">
             <li  class="product-filter-item">
-            <label for="slyder">
-              <input type="checkbox" name="Слайдер" id="slyder"checked>Слайдер
+
+            <label class="login-checkbox" for="slyder">
+              <input type="checkbox" id="slyder"checked >
+              <span class="checkbox-indicator">
+                <img  src="img/dec/checkbox-on.svg">
+              </span>
+              Слайдер
             </label>
+            
             </li>
             <li  class="product-filter-item">
             <label for="block">
-              <input type="checkbox" name="Блок приемуществ" id="block">Блок приемуществ
+              <input type="checkbox" id="block">Блок приемуществ
             </label>
             </li>
             <li  class="product-filter-item">
             <label for="news">
-              <input type="checkbox" name="Новости" id="news" checked>Новости
+              <input type="checkbox" id="news" checked>Новости
             </label>
             </li>
             <li  class="product-filter-item">
             <label for="galery">
-              <input type="checkbox" name="Галерея" id="galery">Галерея
+              <input type="checkbox" id="galery">Галерея
             </label>
             </li>
             <li  class="product-filter-item">
             <label for="basket">
-              <input type="checkbox" name="Корзина" id="basket">Корзина
+              <input type="checkbox" id="basket">Корзина
             </label>
             </li>
           </ul>
@@ -172,14 +178,15 @@
           </a>
          </li>
         </ul>
-        <div class="next-page">     
-          <button class="button button-next-page1" type="button" name="page1">1</button>       
-          <button class="button button-next-page2" type="button" name="page1">2</button>     
-          <button class="button button-next-page3" type="button" name="page1">3</button>     
-          <button class="button button-next-page" type="button" name="page1">Следущая</button>
-      </div>
+        
        </section>
       </div>
+      <div class="paginator">     
+        <a class="page1" href="#">1</a>       
+        <a href="#">2</a>     
+        <a href="#">3</a>     
+        <a class="next" href="#">Следущая</a>
+    </div>
     </div>
 
     
