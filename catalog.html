@@ -24,7 +24,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <a class="user-basket-logo" href="#">
-         <img src="img/dec/basket-icon.svg" width="15px" height="15px"
+         <img src="img/dec/cart-icon1.png" width="15" height="15"
           alt="корзина">
         </a>
         <a class="user-basket" href="#">Корзина</a>
@@ -51,31 +51,39 @@
           </div>
           <div class="outputs">
             <p>От</p>
-          
-            <output name="daysoutput0">0</output>
-          
-            <p>До</p>
-          
-            <output name="daysoutput">15000</output>
-          
+         
+            <output name="daysoutput0">0</output>        
+            <p>До</p>         
+            <output name="daysoutput">15000</output>          
         </div>
-
         </div>
           <h3>Сетка:</h3>
           <ul class="product-filter-list-s">
             <li class="product-filter-item">
               <label for="adaptive">
-             <input type="radio" name="filter-group" id="adaptive" checked>Адаптивная
+             <input class="visually-hidden" type="radio" name="filter-group" id="adaptive" checked>
+             <span class="checkbox-indicator">
+              <img  src="img/dec/radio-on.svg" width="25" height="25">
+            </span>
+             Адаптивная
             </label>
             </li>         
             <li  class="product-filter-item">
               <label for="fix">
-             <input type="radio" name="filter-group" id="fix">Фиксированная
+             <input class="visually-hidden" type="radio" name="filter-group" id="fix">
+             <span class="checkbox-indicator">
+              <img  src="img/dec/radio-off.svg" width="25" height="25">
+            </span>
+             Фиксированная
             </label>
             </li>         
             <li  class="product-filter-item">
             <label for="buble">
-             <input type="radio" name="filter-group" id="buble">Резиновая
+             <input class="visually-hidden" type="radio" name="filter-group" id="buble">
+             <span class="checkbox-indicator">
+              <img  src="img/dec/radio-off.svg" width="25" height="25">
+            </span>
+             Резиновая
             </label>
             </li>
           </ul> 
@@ -84,36 +92,51 @@
             <li  class="product-filter-item">
 
             <label class="login-checkbox" for="slyder">
-              <input type="checkbox" id="slyder"checked >
+              <input class="visually-hidden" type="checkbox" id="slyder"checked >
               <span class="checkbox-indicator">
-                <img  src="img/dec/checkbox-on.svg">
+                <img  src="img/dec/checkbox-on.svg" width="27" height="23">
               </span>
               Слайдер
-            </label>
-            
+            </label>      
             </li>
-            <li  class="product-filter-item">
+            <li class="product-filter-item">
             <label for="block">
-              <input type="checkbox" id="block">Блок приемуществ
+              <input class="visually-hidden" type="checkbox" id="block">
+              <span class="checkbox-indicator">
+                <img  src="img/dec/checkbox-off.svg" width="23" height="23">
+              </span>
+              Блок приемуществ
             </label>
             </li>
-            <li  class="product-filter-item">
+            <li class="product-filter-item">
             <label for="news">
-              <input type="checkbox" id="news" checked>Новости
+              <input class="visually-hidden" type="checkbox" id="news" checked>
+              <span class="checkbox-indicator">
+                <img  src="img/dec/checkbox-on.svg" width="27" height="23">
+              </span>
+              Новости
             </label>
             </li>
-            <li  class="product-filter-item">
+            <li class="product-filter-item">
             <label for="galery">
-              <input type="checkbox" id="galery">Галерея
+              <input class="visually-hidden" type="checkbox" id="galery">
+              <span class="checkbox-indicator">
+                <img  src="img/dec/checkbox-off.svg" width="23" height="23">
+              </span>
+              Галерея
             </label>
             </li>
-            <li  class="product-filter-item">
+            <li class="product-filter-item">
             <label for="basket">
-              <input type="checkbox" id="basket">Корзина
+              <input class="visually-hidden" type="checkbox" id="basket">
+              <span class="checkbox-indicator">
+                <img  src="img/dec/checkbox-off.svg" width="23" height="23">
+              </span>
+              Корзина
             </label>
             </li>
           </ul>
-          <button class="product-filter-button" type="submit">Показать</button>
+          <button class="button product-filter-button" type="submit">Показать</button>
         </form>
      </section>
 
@@ -143,50 +166,57 @@
         <ul class="catalog-list">
          <li class="catalog-item">
           <a href="#">
+           <img src="img/dec/browser.svg">
            <img src="img/cnt/img-sedona-jpg.jpg" width="360" height="576"
             alt="Седона">
           </a>
          </li>
          <li class="catalog-item">
           <a href="#">
+           <img class="browser1" src="img/dec/browser1.svg">
            <img src="img/cnt/img-pink-jpg.jpg" width="360" height="576"
             alt="Пинк">
           </a>
          </li>
          <li class="catalog-item">
           <a href="#">
+            <img class="browser1" src="img/dec/browser1.svg">
            <img src="img/cnt/img-barbershop-jpg.jpg" width="360" height="576"
             alt="Барбершоп">
           </a>
          </li>
          <li class="catalog-item">
           <a href="#">
+            <img class="browser1" src="img/dec/browser1.svg">
            <img src="img/cnt/img-mishka-jpg.jpg" width="360" height="576"
             alt="Мишка">
           </a>
          </li>
          <li class="catalog-item">
           <a href="#">
+            <img class="browser1" src="img/dec/browser1.svg">
            <img src="img/cnt/img-aplus-jpg.jpg" width="360" height="576"
             alt="Аплюс">
           </a>
          </li>
          <li class="catalog-item">
           <a href="#">
+            <img class="browser1" src="img/dec/browser1.svg">
            <img src="img/cnt/img-kvast-jpg.jpg" width="360" height="576"
             alt="Кваст">
           </a>
          </li>
         </ul>
-        
+         <div class="paginator">     
+          <a class="page1" href="#">1</a>       
+          <a href="#">2</a>     
+          <a href="#">3</a>     
+          <a class="next" href="#">Следущая</a>
+        </div>
        </section>
+       
       </div>
-      <div class="paginator">     
-        <a class="page1" href="#">1</a>       
-        <a href="#">2</a>     
-        <a href="#">3</a>     
-        <a class="next" href="#">Следущая</a>
-    </div>
+      
     </div>
 
     

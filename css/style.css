@@ -71,10 +71,13 @@ img {
     color: #000000;
 }
 
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-basket:hover,
-.user-basket:focus {
+.user-basket:focus,
+.paginator a:hover,
+.paginator a:focus {
     background-color: #98b4a8;
 }
 
@@ -285,6 +288,7 @@ img {
     width: 160px;
     height: 65px;
     padding: 0;
+    
  }
 
 .site-navigation {
@@ -292,18 +296,23 @@ img {
     margin-right: 286px;
     margin-left: 202px;
     padding: 0;
+
     list-style: none;
     display: flex;
-    justify-content: space-between;   
+    flex-wrap: wrap;
+    justify-content: space-between; 
+     
 }
 
 .user-basket {
     padding: 0;
     
+    
 }
 
 .user-basket-logo {
     margin-right: 26px;
+    width: 15px;
 }
 
 .container {
@@ -313,6 +322,7 @@ img {
     margin-right: auto;
     display: flex;
     align-items: center;
+    
 }
 
 .catalog-header .main-navigation {
@@ -324,6 +334,7 @@ img {
 
 .navigation-wrapper {
   width: 100%;
+  
 }
 
 .main-navigation h1 {
@@ -622,7 +633,10 @@ body {
     padding: 0;
     margin-right: 140px;
     margin-top: 60px;
-    
+}
+
+.checkbox-indicator img {
+    opacity: 40%;
 }
 
 .range input {
@@ -707,7 +721,6 @@ body {
    font-size: 14px;
    line-height: 18px;
    color: #000000;
-   
 }
 
 .sort-item {
@@ -739,11 +752,16 @@ body {
     text-transform: uppercase;
 }
 
-.catalog-item {
+.catalog-item a {
     padding: 0;
     margin: 0;
-    margin-bottom: 73px;
-    
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+}
+
+.browser1 {
+    opacity: 12%;
 }
 
 .catalog-columns {
@@ -753,19 +771,16 @@ body {
     display: flex; 
     justify-content: center;
     list-style: none;
-    outline: 1px solid #000000;
-
+    
 }
     
 .products {
     width: 760px;
     margin: 0;
     padding: 0;
-
 }
 
 .catalog-list {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -773,7 +788,6 @@ body {
     padding: 0;  
     margin: 0;
     margin-top: 99px;
-
 }
 
 /*Меню слудующая страница*/
