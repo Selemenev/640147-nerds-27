@@ -461,12 +461,12 @@ img {
 /* Баннера*/
 
 
-.banner-1 h1,
-.banner-2 h1,
-.banner-3 h1 {
+.banner-1 h2,
+.banner-2 h2,
+.banner-3 h2 {
     padding: 0;
     text-transform: none;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 55px;
     line-height: 55px;
     color: #000000;
@@ -647,7 +647,7 @@ body {
     color: #283136; 
 }
 
-.orders p {
+.orders h3 {
     text-transform: uppercase;
     font-weight: 700;
     color: #000000;
@@ -917,6 +917,16 @@ body {
    margin: 0;
    font-weight: 400;
    font-size: 14px;
+   line-height: 18px;
+   color: #000000;
+   text-transform: uppercase;
+}
+
+.sort-item h3 {
+   padding: 0;
+   margin: 0;
+   font-weight: 700;
+   font-size: 18px;
    line-height: 18px;
    color: #000000;
    text-transform: uppercase;
