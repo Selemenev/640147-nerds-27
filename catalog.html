@@ -20,14 +20,14 @@
         <ul class="site-navigation">
           <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="active"><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a class="user-basket-logo" href="#">
-         <img src="img/dec/cart-icon1.png" width="15" height="15"
-          alt="корзина">
-        </a>
-        <a class="user-basket" href="#">Корзина</a>
+        <div class="basket-block">
+          <a class="user-basket-logo" href="#" width="15" height="15">
+          </a>
+          <a class="user-basket" href="#">Корзина</a>
+          </div>
         </div>
         </div>
         <h1>Магазин готовых шаблонов</h1>
@@ -68,7 +68,7 @@
              Адаптивная
             </label>
             </li>         
-            <li  class="product-filter-item">
+            <li class="product-filter-item">
               <label for="fix">
              <input class="visually-hidden" type="radio" name="filter-group" id="fix">
              <span class="checkbox-indicator">
@@ -77,7 +77,7 @@
              Фиксированная
             </label>
             </li>         
-            <li  class="product-filter-item">
+            <li class="product-filter-item">
             <label for="buble">
              <input class="visually-hidden" type="radio" name="filter-group" id="buble">
              <span class="checkbox-indicator">
@@ -89,8 +89,7 @@
           </ul> 
           <h3>Особенности:</h3>
           <ul class="product-filter-list">
-            <li  class="product-filter-item">
-
+            <li class="product-filter-item">
             <label class="login-checkbox" for="slyder">
               <input class="visually-hidden" type="checkbox" id="slyder"checked >
               <span class="checkbox-indicator">
@@ -208,22 +207,16 @@
          </li>
         </ul>
          <div class="paginator">     
-          <a class="page1" href="#">1</a>       
-          <a href="#">2</a>     
-          <a href="#">3</a>     
-          <a class="next" href="#">Следущая</a>
+          <a class="paginator-page1" href="#">1</a>       
+          <a class="paginator-page2" href="#">2</a>     
+          <a class="paginator-page3" href="#">3</a>     
+          <a class="paginator-next" href="#">Следущая</a>
         </div>
        </section>
-       
       </div>
-      
     </div>
 
-    
-     
-
     <h2 class="visually-hidden">Обратная связь</h2>
-
      <section class="feedback">
       <div class="map">
         <img src="img/dec/2.jpg" name="Карта">
