@@ -298,7 +298,7 @@ img {
     margin-right: 26px;
     width: 15px;
     height: 15px;
-    background-image: url("/img/dec/cart-icon1.png");
+    background-image: url("../img/dec/cart-icon1.png");
 }
 
 .container {
@@ -734,74 +734,74 @@ body {
 .ad-block-logo .htmlacademy {
     width: 199px;
     height: 68px;
-    background-image: url("/img/dec/htmlacdemy-logo.png");
+
+    background-image: url("../img/dec/htmlacdemy-logo.png");
 }
 
 .ad-block-logo .htmlacademy:hover {
     width: 199px;
     height: 68px;
-    background-image: url("/img/dec/htmlacdemy-logo-naved.png");
+    background-image: url("../img/dec/htmlacdemy-logo-naved.png");
 }
 
 .ad-block-logo .htmlacademy:active {
     width: 199px;
     height: 68px;
-    background-image: url("/img/dec//htmlacdemy-logo-active.png");
+    background-image: url("../img/dec//htmlacdemy-logo-active.png");
 }
 
 .ad-block-logo .borodinskiy {
     width: 209px;
     height: 90px;
-    background-image: url("/img/dec/borodinski-logo.jpg");
+    background-image: url("../img/dec/borodinski-logo.jpg");
 }
 
 .ad-block-logo .borodinskiy:hover {
     width: 209px;
     height: 90px;
-    background-image: url("/img/dec/borodinsli-logo-naved.jpg");
+    background-image: url("../img/dec/borodinsli-logo-naved.jpg");
 }
 
 .ad-block-logo .borodinskiy:active {
     width: 209px;
     height: 90px;
-    background-image: url("/img/dec/borodinsli-logo-active.jpg");
+    background-image: url("../img/dec/borodinsli-logo-active.jpg");
 }
 
 .ad-block-logo .pink {
     width: 185px;
     height: 52px;
-    background-image: url("/img/dec/pink-logo.jpg");
+    background-image: url("../img/dec/pink-logo.jpg");
 }
 
 .ad-block-logo .pink:hover {
     width: 185px;
     height: 52px;
-    background-image: url("/img/dec/pink-logo-naved.jpg");
+    background-image: url("../img/dec/pink-logo-naved.jpg");
 }
 
 .ad-block-logo .pink:active {
     width: 185px;
     height: 52px;
-    background-image: url("/img/dec/pink-logo-active.jpg");
+    background-image: url("../img/dec/pink-logo-active.jpg");
 }
-
 
 .ad-block-logo .mishka {
     width: 173px;
     height: 84px;
-    background-image: url("/img/dec/mishka-logo.jpg");
+    background-image: url("../img/dec/mishka-logo.jpg");
 }
 
 .ad-block-logo .mishka:hover {
     width: 173px;
     height: 84px;
-    background-image: url("/img/dec/mishka-logo-naved.jpg");
+    background-image: url("../img/dec/mishka-logo-naved.jpg");
 }
 
 .ad-block-logo .mishka:active {
     width: 173px;
     height: 84px;
-    background-image: url("/img/dec/mishka-logo-active.jpg");
+    background-image: url("../img/dec/mishka-logo-active.jpg");
 }
 
 /*главная-Каталога*/
@@ -1237,7 +1237,7 @@ body {
     position: absolute;
     cursor: pointer;
 
-    background-image: url("/img/dec/close-cross.svg");
+    background-image: url("../img/dec/close-cross.svg");
     opacity: 30%;
     border: 0;
 }
