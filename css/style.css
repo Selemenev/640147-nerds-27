@@ -734,19 +734,19 @@ body {
 .ad-block-logo .htmlacademy {
     width: 199px;
     height: 68px;
-    background-image: url("/img/dec/htmlacademy-logo.jpg");
+    background-image: url("/img/dec/htmlacdemy-logo.png");
 }
 
 .ad-block-logo .htmlacademy:hover {
     width: 199px;
     height: 68px;
-    background-image: url("/img/dec/htmlacdemy-logo-naved.jpg");
+    background-image: url("/img/dec/htmlacdemy-logo-naved.png");
 }
 
 .ad-block-logo .htmlacademy:active {
     width: 199px;
     height: 68px;
-    background-image: url("/img/dec//htmlacdemy-logo-active.jpg");
+    background-image: url("/img/dec//htmlacdemy-logo-active.png");
 }
 
 .ad-block-logo .borodinskiy {
