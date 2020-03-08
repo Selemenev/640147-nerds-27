@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Roboto", "Arial", "sans-serif";
 
     font-size: 14px;
     line-height: 24px;
@@ -88,60 +88,62 @@ img {
 .offers-item p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;  
+    line-height: 24px; 
 }
 
 .button-red {
     text-transform: uppercase;
-
+    text-decoration: none;
+    display: inline-block;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    padding: 16px 40px;
     text-align: center;
     color: #ffffff;
-
-    width: 160px;
-    height: 50px;
-    border: none;
+    
     cursor: pointer;
+    border: none;
     
     border-radius: 3px;
-    background-color: #fb565a ;
+    background-color: #fb565a;
 }
 
 .button-green {
     text-transform: uppercase;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: #ffffff;
-
-    width: 160px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-
-    background-color: #00ca74 ;
-    border-radius: 3px;
-}
-
-.button-yellow {
-    text-transform: uppercase;
-
+    text-decoration: none;
+    display: inline-block;
     
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    padding: 16px 40px;
     text-align: center;
     color: #ffffff;
-
-    width: 160px;
-    height: 50px;
-    border: none;
+    
     cursor: pointer;
+    border: none;
+    
+    border-radius: 3px;
+    background-color: #00ca74;
+}
 
+.button-yellow {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 16px 40px;
+    text-align: center;
+    color: #ffffff;
+    
+    cursor: pointer;
+    border: none;
+    
     border-radius: 3px;
     background-color: #efc84a;
 }
@@ -164,7 +166,11 @@ img {
 
 .banner-button {
     text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
 
+    padding: 20px 60px;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -172,8 +178,6 @@ img {
     color: #ffffff;
 
     background-color: #fb565a;
-    width: 240px;
-    height: 50px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -191,6 +195,7 @@ img {
     background-color: #fb565a;
     width: 219px;
     height: 50px;
+    margin-top: 37px;
     
     border: none;
     border-radius: 3px; 
@@ -319,7 +324,6 @@ img {
 
 .navigation-wrapper {
   width: 100%;
-  
 }
 
 .main-navigation h1 {
@@ -563,27 +567,31 @@ body {
     padding: 0;
 
     display: flex;
-    list-style: none; 
-    
+    list-style: none;  
 }
 
 .offers-item figure {
+    width: 300px;
+    height: 146px;
     margin: 0;
-    padding: 0;  
+    padding: 0; 
+    margin-bottom: 30px; 
 }
 
 .offers-item h2 {
+    margin: 0;
+    padding: 0;
     margin-bottom: 27px;
-    margin-top: 30px;
 }
 
 .offers-item p {
+    white-space: pre-line;
     margin-bottom: 35px;
 }
 
 .offers-item {
+    width: 300px;
     list-style: none;
-    padding: 0;
 }
 
 .offers-item:nth-child(1) {
@@ -600,7 +608,8 @@ body {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
-    color: #000000;  
+    color: #000000; 
+    white-space: pre-line; 
 }
 
 .ad p {
@@ -686,7 +695,7 @@ body {
     margin-bottom: 49px;
 }
 
-.statistics-procent {
+.statistics-interest {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -709,6 +718,7 @@ body {
     color: #283136;
 
     list-style: none;
+    white-space: pre-line;
     padding: 0;
     margin: 0;
 
@@ -921,6 +931,26 @@ body {
    text-transform: uppercase;
 }
 
+.sort-item a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.sort-item .arrow-down {
+    display: inline-block;
+    background-image: url("../img/dec/icon-d-dir.svg");
+    width: 11px;
+    height: 10px;
+}
+
+.sort-item .arrow-up {
+    display: inline-block;
+    background-image: url("../img//dec/icon-up-dir2.svg");
+    opacity: 30%;
+    width: 11px;
+    height: 10px;
+}
+
 .sort-item h3 {
    padding: 0;
    margin: 0;
@@ -1121,7 +1151,6 @@ body {
     padding: 0;
     margin: 0;
     margin-top: 54px;
-    margin-bottom: 32px;
 
     font-weight: 500;
     font-size: 18px;
@@ -1133,8 +1162,7 @@ body {
     padding: 0;
     margin: 0;
     
-    margin-bottom: 37px;
-
+    white-space: pre-line;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
