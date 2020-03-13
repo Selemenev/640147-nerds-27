@@ -17,16 +17,18 @@
           <img src="img/dec/nerds-logo.svg" width="160" height="65"
            alt="Логотип студии Нёрдс">
         </a>
-        <ul class="site-navigation">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li class="active"><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="basket-block">
-          <a class="user-basket-logo" href="#">
-          </a>
-          <a class="user-basket" href="#">Корзина</a>
+        <div class="all-navigation">
+          <ul class="site-navigation">
+            <li><a href="index.html">Студия</a></li> 
+            <li><a href="#">Клиенты</a></li>
+            <li class="active"><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="navigation-basket">
+            <li>
+             <a class="user-basket" href="#">Корзина</a>
+            </li>
+          </ul>
           </div>
         </div>
         </div>
@@ -41,48 +43,37 @@
      <div class="catalog-columns">
      <section class="product-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="get"
-         oninput="daysoutput.value=dayscount.value">
+        <form action="https://echo.htmlacademy.ru/courses" method="POST">
 
-        <div class="range">
           <h3>Стоимость:</h3>
           <div class="range-area">
-           <input type="range" name="dayscount" min="0" max="30000" step="1000"/>
+          <span class="range"></span>
           </div>
           <div class="outputs">
-            <p>От</p>
-         
-            <output name="daysoutput0">0</output>        
-            <p>До</p>         
-            <output name="daysoutput">15000</output>          
-        </div>
+            <p>От<span>0</span></p>      
+            <p>До<span>15000</span></p>              
+        
         </div>
           <h3>Сетка:</h3>
           <ul class="product-filter-list-s">
             <li class="product-filter-item">
-              <label for="adaptive">
-             <input class="visually-hidden" type="radio" name="filter-group" id="adaptive" checked>
-             <span class="checkbox-indicator">
-              <img  src="img/dec/radio-on.svg" width="25" height="25" alt="пункт активен">
-            </span>
-             Адаптивная
-            </label>
+             <label class="filtr-radio">
+               <input class="visually-hidden" type="radio" value="адаптивная" name="выбор" checked>
+               <span class="radio-indicator"></span>
+               Адаптивная
+             </label>
             </li>         
             <li class="product-filter-item">
-              <label for="fix">
-             <input class="visually-hidden" type="radio" name="filter-group" id="fix">
-             <span class="checkbox-indicator">
-              <img  src="img/dec/radio-off.svg" width="25" height="25" alt="пункт не активен">
-            </span>
+              <label class="filtr-radio">
+                <input class="visually-hidden" type="radio" value="фиксированная" name="выбор">
+                <span class="radio-indicator"></span>
              Фиксированная
             </label>
             </li>         
             <li class="product-filter-item">
-            <label for="buble">
-             <input class="visually-hidden" type="radio" name="filter-group" id="buble">
-             <span class="checkbox-indicator">
-              <img  src="img/dec/radio-off.svg" width="25" height="25" alt="пункт не активен">
-            </span>
+              <label class="filtr-radio">
+                <input class="visually-hidden" type="radio" value="резиновая" name="выбор">
+                <span class="radio-indicator"></span>
              Резиновая
             </label>
             </li>
@@ -90,47 +81,39 @@
           <h3>Особенности:</h3>
           <ul class="product-filter-list">
             <li class="product-filter-item">
-            <label class="login-checkbox" for="slyder">
-              <input class="visually-hidden" type="checkbox" id="slyder" checked >
-              <span class="checkbox-indicator">
-                <img  src="img/dec/checkbox-on.svg" width="27" height="23" alt="пункт активен">
+              <label class="filtr-checkbox">
+                <input class="visually-hidden" type="checkbox" value="слайдер" name="выбор" checked>
+                <span class="checkbox-indicator"></span>
+                
               </span>
               Слайдер
             </label>      
             </li>
             <li class="product-filter-item">
-            <label for="block">
-              <input class="visually-hidden" type="checkbox" id="block">
-              <span class="checkbox-indicator">
-                <img  src="img/dec/checkbox-off.svg" width="23" height="23" alt="пункт не активен">
-              </span>
+              <label class="filtr-checkbox">
+                <input class="visually-hidden" type="checkbox" value="блок приемуществ" name="выбор">
+                <span class="checkbox-indicator"></span>
               Блок приемуществ
             </label>
             </li>
             <li class="product-filter-item">
-            <label for="news">
-              <input class="visually-hidden" type="checkbox" id="news" checked>
-              <span class="checkbox-indicator">
-                <img  src="img/dec/checkbox-on.svg" width="27" height="23" alt="пункт активен">
-              </span>
+              <label class="filtr-checkbox">
+                <input class="visually-hidden" type="checkbox" value="новости" name="выбор" checked>
+                <span class="checkbox-indicator"></span>
               Новости
             </label>
             </li>
             <li class="product-filter-item">
-            <label for="galery">
-              <input class="visually-hidden" type="checkbox" id="galery">
-              <span class="checkbox-indicator">
-                <img  src="img/dec/checkbox-off.svg" width="23" height="23" alt="пункт не активен">
-              </span>
+              <label class="filtr-checkbox">
+                <input class="visually-hidden" type="checkbox" value="галерея" name="выбор">
+                <span class="checkbox-indicator"></span>
               Галерея
             </label>
             </li>
             <li class="product-filter-item">
-            <label for="basket">
-              <input class="visually-hidden" type="checkbox" id="basket">
-              <span class="checkbox-indicator">
-                <img  src="img/dec/checkbox-off.svg" width="23" height="23" alt="пункт не активен">
-              </span>
+              <label class="filtr-checkbox">
+                <input class="visually-hidden" type="checkbox" value="корзина" name="выбор">
+                <span class="checkbox-indicator"></span>
               Корзина
             </label>
             </li>
@@ -165,47 +148,71 @@
            <li class="sort-item">
             <a class="arrow-up" href="#"></a>
           </li>
-         </ul>        
+         </ul> 
+
         <ul class="catalog-list">
-         <li class="catalog-item">
-           <img src="img/dec/browser.svg" width="360" height="40" alt="шапка фотографии сайта">
+
+         <li class="catalog-item-sedona">          
            <img src="img/cnt/img-sedona-jpg.jpg" width="360" height="576"
-            alt="Седона">
+            alt="Седона">        
+          <div class="product-card">
+            <a class="card-link" href="#">Sedona</a>
+           <p>Информационный сайт
+              для туристов</p>
+              <a class="button product-card-button" href="#">9 900 руб</a>
+          </div>
          </li>
-         <li class="catalog-item">
-          <a href="#">
-           <img class="browser1" src="img/dec/browser1.svg" width="360" height="40" alt="шапка фотографии сайта">
+
+         <li class="catalog-item">          
            <img src="img/cnt/img-pink-jpg.jpg" width="360" height="576"
-            alt="Пинк">
-          </a>
+            alt="Пинк">   
+            <div class="product-card visually-hidden">
+            <a class="card-link" href="#">Pink app</a>
+             <p>Продуктовый лендинг
+              приложения для iOS и Android</p>
+            <a class="button product-card-button" href="#">9 900 руб</a>
+          </div>      
          </li>
-         <li class="catalog-item">
-          <a href="#">
-            <img class="browser1" src="img/dec/browser1.svg" width="360" height="40" alt="шапка фотографии сайта">
+
+         <li class="catalog-item">          
            <img src="img/cnt/img-barbershop-jpg.jpg" width="360" height="576"
-            alt="Барбершоп">
-          </a>
+            alt="Барбершоп">  
+            <div class="product-card visually-hidden">
+              <a class="card-link" href="#">Barbershop</a>
+               <p>Сайт салона красоты.
+                Для мужчин, да.</p>
+              <a class="button product-card-button" href="#">9 900 руб</a>
+            </div>             
          </li>
-         <li class="catalog-item">
-          <a href="#">
-            <img class="browser1" src="img/dec/browser1.svg" width="360" height="40" alt="шапка фотографии сайта">
+         <li class="catalog-item">         
            <img src="img/cnt/img-mishka-jpg.jpg" width="360" height="576"
-            alt="Мишка">
-          </a>
+            alt="Мишка"> 
+            <div class="product-card visually-hidden">
+              <a class="card-link" href="#">Mishka</a>
+               <p>Интернет-магазин
+                вязаных игрушек</p>
+              <a class="button product-card-button" href="#">9 900 руб</a>
+            </div>              
          </li>
-         <li class="catalog-item">
-          <a href="#">
-            <img class="browser1" src="img/dec/browser1.svg" width="360" height="40" alt="шапка фотографии сайта">
+         <li class="catalog-item">         
            <img src="img/cnt/img-aplus-jpg.jpg" width="360" height="576"
-            alt="Аплюс">
-          </a>
+            alt="Аплюс"> 
+            <div class="product-card visually-hidden">
+              <a class="card-link" href="#">A plus</a>
+               <p>Лендинг курсов повышения 
+                квалификации</p>
+              <a class="button product-card-button" href="#">9 900 руб</a>
+            </div>              
          </li>
-         <li class="catalog-item">
-          <a href="#">
-            <img class="browser1" src="img/dec/browser1.svg" width="360" height="40" alt="шапка фотографии сайта">
+         <li class="catalog-item">        
            <img src="img/cnt/img-kvast-jpg.jpg" width="360" height="576"
-            alt="Кваст">
-          </a>
+            alt="Кваст">  
+            <div class="product-card visually-hidden">
+              <a class="card-link" href="#">Кваст</a>
+               <p>Промо-сайт производителя
+                крафтового кваса</p>
+              <a class="button product-card-button" href="#">9 900 руб</a>
+            </div>              
          </li>
         </ul>
          <div class="paginator">     
@@ -219,20 +226,22 @@
     </div>
 
     <h2 class="visually-hidden">Обратная связь</h2>
-     <section class="feedback">
+    <section class="feedback">
       <div class="map">
-        <img src="img/dec/2.jpg" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img src="img/dec/2.jpg" width="1440" height="416" alt="Санкт-Петербург,ул. Б. Конюшенная, д. 19/8">
         <div class="window-on-map">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>
             191186, Санкт-Петербург, 
             ул. Б. Конюшенная, д. 19/8
-            тел. +7 (812) 275-75-75
+          </p>
+          <p> 
+            <a href="tel:+78124757575">тел. +7(812)275-75-75</a>
           </p>
           <button class="button button-on-map">Напишите нам</button>
         </div>
         <div class="map-marker">
-          <img src="img/dec/map-marker.png" width="231" height="190" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <img src="img/dec/map-marker.png" alt="Санкт-Петербург,ул. Б. Конюшенная, д. 19/8">
         </div>
       </div>
      
@@ -252,10 +261,10 @@
         <div class="your-text">      
          <label for="contact-letter">Текст письма:</label>
          <textarea class="feedback-area" name="text" id="contact-letter" placeholder="В свободной форме"></textarea>
-        </div>
-       </form>
+        </div>     
          <button class="button feedback-button" type="submit">Отправить</button>
          <button class="modal-close" type="button"></button>
+        </form>
        </div>
       </section>
    </main>
