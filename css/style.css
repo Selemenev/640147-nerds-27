@@ -268,7 +268,7 @@ img {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 18px;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -395,6 +395,8 @@ img {
 .social-button:active {
 
     background-color: #d7373b;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    
 }
 
 .site-navigation a:hover {
@@ -422,6 +424,7 @@ img {
 .product-card-button:active {
     background-color:#d7373b;
     color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 
 }
 
@@ -432,6 +435,7 @@ img {
 .button-green:active {
     background-color: #00aa62;
     color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-yellow:hover {
@@ -441,6 +445,7 @@ img {
 .button-yellow:active {
     background-color: #e5a722;
     color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 .button-red:hover {
     background-color: #e74246;
@@ -449,6 +454,7 @@ img {
 .button-red:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-on-map:hover {
@@ -458,6 +464,7 @@ img {
 .button-on-map:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .product-filter-button:hover {
@@ -467,6 +474,7 @@ img {
 .product-filter-button:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .paginator .paginator-page1:hover {
@@ -476,6 +484,7 @@ img {
 .paginator .paginator-page1:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .paginator .paginator-page2:hover {
@@ -485,6 +494,7 @@ img {
 .paginator .paginator-page2:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .paginator .paginator-page3:hover {
@@ -494,6 +504,7 @@ img {
 .paginator .paginator-page3:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .paginator .paginator-next:hover {
@@ -503,6 +514,7 @@ img {
 .paginator .paginator-next:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /* Баннера*/
@@ -1034,7 +1046,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    margin-top: 30px;
+    margin-top: 26px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -1072,7 +1084,7 @@ body {
 }
 
 .filtr-radio {
-    padding-left: 30px;
+    padding-left: 36px;
     position: relative;
     cursor: pointer;
 }
@@ -1104,7 +1116,7 @@ body {
 }
 
 .filtr-checkbox {
-    padding-left: 30px;
+    padding-left: 36px;
     position: relative;
     cursor: pointer;
 }
@@ -1141,7 +1153,7 @@ body {
     content: "";
     width: 219px;
     height: 2px;
-    background-image: linear-gradient(to right,  rgb(27, 204, 36) 35%, #d7dcde 75%);
+    background-image: linear-gradient(to right,  rgb(27, 204, 36) 62%, #d7dcde 75%);
     top: 41px;
     left: 21px;
 }
@@ -1199,7 +1211,7 @@ body {
 }
 
 .outputs {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
     display: flex;
     align-items: center;
     
@@ -1217,13 +1229,13 @@ body {
 .product-filter-list {
     margin: 0;
     padding: 0;
-    margin-bottom: 50px; 
+    margin-bottom: 48px; 
 }
 
 .product-filter-list-s {
     margin: 0;
     padding: 0;
-    margin-bottom: 53px;
+    margin-bottom: 44px;
 }
 
 .product-filter-item {
@@ -1232,7 +1244,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 
     text-align: left;
     
@@ -1414,32 +1426,79 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 
-    margin-top: 64px;
+    margin-top: 62px;
     padding: 0;
-    
+}
+
+.footer-social  {
+    width: 259px;
 }
 
 .footer-social ul {
-    padding: 0;
-    width: 259px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
-    
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
 }
     
 .social-button  {
     border-radius: 50%;
     background-color: #e1e1e1;  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    position: relative;
+
     width: 79px;
     height: 79px;
+    
 }
 
+.social-button-vk:after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 15px;
+    top: 32px;
+    left: 27px;
+    background-image: url("../img/dec/vk-icon.svg");
+    background-repeat: no-repeat;
+    
+}
+
+.social-button-fb:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 22px;
+    top: 28px;
+    left: 34px;
+    background-image: url("../img/dec/fb-icon.svg");
+    background-repeat: no-repeat;
+    
+}
+
+.social-button-insta:after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 30px;
+    left: 30px;
+    background-image: url("../img/dec/insta-icon.svg");
+    background-repeat: no-repeat;
+    
+}
+
+.social-button-vk:active::after {
+    opacity: 30%;
+}
+
+.social-button-fb:active::after {
+    opacity: 30%;
+}
+
+.social-button-insta:active::after {
+    opacity: 30%;
+}
 /* Карта и Всплывающее окно */
 
 .map {
