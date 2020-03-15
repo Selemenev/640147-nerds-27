@@ -93,6 +93,11 @@ img {
     color: #283136;
 }
 
+.button {
+    padding: 0;
+    margin: 0;
+}
+
 .button-red {
     text-transform: uppercase;
     text-decoration: none;
@@ -188,6 +193,25 @@ img {
     cursor: pointer;
 }
 
+.button-on-map {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+
+    margin-top: 38px;
+    padding: 16px 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #fb565a;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 .product-card-button {
     text-transform: uppercase;
     text-decoration: none;
@@ -208,24 +232,6 @@ img {
     cursor: pointer;
 }
 
-.button-on-map {
-    text-transform: uppercase;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: #ffffff;
-
-    background-color: #fb565a;
-    width: 219px;
-    height: 50px;
-    margin-top: 37px;
-    
-    border: none;
-    border-radius: 3px; 
-    cursor: pointer;
-}
 
 .feedback-button {
     text-transform: uppercase;
@@ -393,10 +399,8 @@ img {
 }
 
 .social-button:active {
-
     background-color: #d7373b;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    
 }
 
 .site-navigation a:hover {
@@ -540,7 +544,7 @@ img {
     display: flex;
     margin-top: 18px;
     width: 1160px;
-    height: 413px;   
+    min-height: 413px;   
 }
 
 .banner-2 {
@@ -551,7 +555,7 @@ img {
     justify-content: space-between;
     margin-top: 18px;
     width: 1159px;
-    height: 430px;   
+    min-height: 430px;   
 }
 
 .banner-3 {
@@ -562,7 +566,7 @@ img {
     justify-content: space-between;
     margin-top: 18px;
     width: 1159px;
-    height: 411px;   
+    min-height: 411px;   
 }
 
 .banner-1-text,
@@ -1587,7 +1591,8 @@ body {
     padding: 0;
     width: 760px;
     height: 118px;
-    border: 2px solid #d7dcde;  
+    border: 2px solid #d7dcde; 
+    outline: none; 
 }
 
 .login-area {
@@ -1598,6 +1603,19 @@ body {
     width: 360px;
     height: 50px;
     border: 2px solid #d7dcde;
+    outline: none; 
+}
+
+.login-area:hover,
+.feedback-area:hover,
+.email-area:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.login-area:active,
+.feedback-area:active,
+.email-area:active {
+    border: 2px solid #000000;
 }
 
 .email-area {
@@ -1608,6 +1626,7 @@ body {
     width: 360px;
     height: 50px;
     border: 2px solid #d7dcde;
+    outline: none;
 }
 
 .feedback {
@@ -1650,6 +1669,16 @@ body {
     opacity: 30%;
     border: 0;
 }
+
+.modal-close:hover {
+    opacity: 100%;
+}
+
+.modal-close:active {
+    opacity: 10%;
+}
+
+
 
 .contacts {
     padding: 0;

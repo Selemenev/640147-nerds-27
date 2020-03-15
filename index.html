@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head> 
   <body>
@@ -35,7 +35,8 @@
       <div class="banner-1-text">
         <h2>Долго, дорого,<br>скрупулезно.</h2>
           <p>Математически выверенный дизайн<br>
-            для вашего сайта или мобильного приложения</p>
+            для вашего сайта или мобильного приложения
+            </p>
           <a class="button banner-button" href="#">Узнать больше</a>
       </div>
         <figure class="fig-slide">
@@ -172,12 +173,13 @@
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p> 
-            <a href="tel:+78124757575">тел. +7(812)275-75-75</a>
+            <a href="tel:+78124757575">тел. +7 (812)275-75-75</a>
           </p>
-          <button class="button button-on-map">Напишите нам</button>
+          <a class="button button-on-map">Напишите нам</a>
         </div>
         <div class="map-marker">
-          <img src="img/dec/map-marker.png" alt="Санкт-Петербург,ул. Б. Конюшенная, д. 19/8">
+          <img src="img/dec/map-marker.png" width="231" height="190"
+           alt="Санкт-Петербург,ул. Б. Конюшенная, д. 19/8">
         </div>
       </div>     
       <div class="feedback-item visually-hidden">
@@ -186,11 +188,11 @@
         <ul class="contacts">
           <li class="your-name">
            <label for="contact-name">Ваше имя:</label>
-            <input class="login-area" type="text" name="login" id="contact-name" placeholder="Имя Фамилия">
+            <input class="login-area" required type="text" name="login" id="contact-name" placeholder="Имя Фамилия">
           </li>
           <li class="your-mail">
            <label for="contact-e-mail">Ваш email:</label>
-            <input class="email-area" type="text" name="e-mail" id="contact-e-mail" placeholder="email@example.ru">
+            <input class="email-area" required type="text" name="e-mail" id="contact-e-mail" placeholder="email@example.ru">
           </li>
         </ul>
         <div class="your-text">      
