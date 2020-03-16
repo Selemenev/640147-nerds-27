@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize-min.css" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head> 
   <body>
@@ -34,39 +34,43 @@
     <section class="banner-1">
       <div class="banner-1-text">
         <h2>Долго, дорого,<br>скрупулезно.</h2>
-          <p>Математически выверенный дизайн<br>
+        <p>Математически выверенный дизайн<br>
             для вашего сайта или мобильного приложения
-            </p>
-          <a class="button banner-button" href="#">Узнать больше</a>
+        </p>
+        <a class="button banner-button" href="#">Узнать больше</a>
       </div>
-        <figure class="fig-slide">
-          <img class="slide" src="img/dec/slide-picture.png" width="698" height="413" alt="Картинка слайда номер 1">
+      <div class="slide1">
            <button class="button figure-button1" type="button"></button>
            <button class="button figure-button2" type="button"></button>
            <button class="button figure-button3" type="button"></button>
-        </figure>
+      </div> 
     </section>
-    <section class="visually-hidden banner-2">
+    <section class="banner-2">
       <div class="banner-2-text">
-        <h2>Любим математику,как никто другой</h2>
+        <h2>Любим математику<br>
+            как никто другой</h2>
         <p>Никакого креатива, только математические формулы 
            для расчета идеальных пропорций.</p>
-          <button class="button banner-button" type="button">Узнать больше</button>
+           <a class="button banner-button" href="#">Узнать больше</a>
       </div>
-        <figure>
-          <img class="slide" src="img/dec/slide-picture2.png" width="663" height="430" alt="Картинка слайда номер 2">
-        </figure>
+      <div class="slide2">
+        <button class="button figure-button1" type="button"></button>
+        <button class="button figure-button2" type="button"></button>
+        <button class="button figure-button3" type="button"></button>
+      </div> 
     </section>
-    <section class="visually-hidden banner-3">
+    <section class="banner-3">
       <div class="banner-3-text">
         <h2>Только ночь,<br>только хардкор</h2>
           <p>Работать днем, как все? Мы против этого.<br>
           Ближе к полуночи работа только начинается.</p>
-          <button class="button banner-button" type="button">Узнать больше</button>
+          <a class="button banner-button" href="#">Узнать больше</a>
       </div>
-        <figure>
-          <img class="slide" src="img/dec/slide-picture3.png" width="759" height="411" alt="картинка слайда номер 3">
-        </figure>
+      <div class="slide3">
+        <button class="button figure-button1" type="button"></button>
+        <button class="button figure-button2" type="button"></button>
+        <button class="button figure-button3" type="button"></button>
+   </div> 
     </section>
   </header>
   <main class="major">
@@ -89,7 +93,7 @@
             Покорите топ-10 приложений в
             AppStore и Google Play
           </p>
-           <button class="button button-green" type="button">Заказать</button>
+           <a class="button button-green" href="#">Заказать</a>
         </li>
         <li class="offers-item offers-item-yellow">          
           <h2>Презентации</h2>
@@ -97,10 +101,9 @@
             Вы даже не подозреваете,
             насколько вы изумительны!
           </p>
-            <button class="button button-yellow" type="button">Заказать</button>
+            <a class="button button-yellow" href="#">Заказать</a>
         </li>
       </ul>
-
     <section class="ad">
       <div class="ad-text">
         <h2>Мы — маленькая, но гордая
@@ -155,6 +158,7 @@
         </ul>  
       </div>
     </section>
+    <h2 class="visually-hidden">Веб-сайты на заказ</h2>
       <div class="ad-block-logo">
         <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
         <a class="borodinskiy" href="#1"></a>
@@ -173,7 +177,7 @@
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p> 
-            <a href="tel:+78124757575">тел. +7 (812)275-75-75</a>
+            <a class="tel-on-map" href="tel:+78124757575">тел. +7 (812)275-75-75</a>
           </p>
           <a class="button button-on-map">Напишите нам</a>
         </div>
@@ -207,12 +211,12 @@
   </main>
   <footer class="main-footer">
     <div class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul> 
        <li>
          <a class="social-button social-button-vk" href="#"></a>
        </li>
-       <li><a class="social-button social-button-fb" href="#">
-       
+       <li><a class="social-button social-button-fb" href="#">      
       </a></li>
       <li><a class="social-button social-button-insta" href="#">
         

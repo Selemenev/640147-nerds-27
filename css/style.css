@@ -222,7 +222,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    margin-top: 25px;
+    margin-top: 31px;
     text-align: center;
     color: #ffffff;
 
@@ -278,6 +278,7 @@ img {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    letter-spacing: 0.px;
     text-align: left;
     color: #000000;
     
@@ -343,11 +344,14 @@ img {
 .user-basket::before {
     position: absolute;
     content: "";
+    
     top: 0;
-    left: -37px;
+    left: -40px;
     width: 15px;
     height: 15px;
     background-image: url("../img/dec/basket-icon.svg");
+    opacity: 30%;
+    
 }
 
 .navigation-basket {
@@ -376,7 +380,7 @@ img {
 }
 
 .navigation-wrapper {
-  width: 100%;
+    width: 100%;
 }
 
 .active a {
@@ -538,34 +542,78 @@ img {
     color: #000000;
 }
 
-.banner-1 {
+.slide1 {
+    position: relative;
+    margin: 0;
     padding: 0;
-    margin: auto;
+    margin-left: 54px;
+    width: 698px;
+    height: 413px;
+    background-image: url("../img/dec/slide-picture.png"); 
+    background-repeat: no-repeat;
+    
+}
+
+.slide2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 663px;
+    height: 430px;
+    background-image: url("../img/dec/slide-picture1.png"); 
+    background-repeat: no-repeat;
+    
+}
+
+.slide3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 759px;
+    height: 411px;
+    background-image: url("../img/dec/slide-picture2.png"); 
+    background-repeat: no-repeat;
+    
+}
+
+.banner-1 {
     display: flex;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
     margin-top: 18px;
     width: 1160px;
     min-height: 413px;   
 }
 
 .banner-2 {
+    position: relative;
+    display: flex;
+    display: none;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: space-between;
+    
     margin-top: 18px;
-    width: 1159px;
+    width: 1160px;
     min-height: 430px;   
 }
 
 .banner-3 {
+    position: relative;
+
     padding: 0;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
+    display: none;
     margin-top: 18px;
-    width: 1159px;
+    width: 1160px;
     min-height: 411px;   
 }
 
@@ -577,29 +625,39 @@ img {
 }
 
 
-.banner-1-text p,
-.banner-2-text p,
-.banner-3-text p {
+.banner-1-text p {
     padding: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    width: 360px;
+    
     color: #283136;
 }
+.banner-2-text p {
+    padding: 0;
+    padding: 0;
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 410px;
+    
+    color: #283136;
 
-.banner-1 figure,
-.banner-2 figure,
-.banner-3 figure {
-    margin: 0;
-    padding: 0; 
-    margin-left: 55px; 
 }
-
-.fig-slide {
-    position: relative;
-    background-color: #eeeeee;
+.banner-3-text p {
+    padding: 0;
+    padding: 0;
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 345px;
+    
+    color: #283136;
 }
 
 .figure-button1 {
@@ -661,7 +719,7 @@ body {
 
 .major,
 .major-catalog {
-   width: 100%;
+    width: 100%;
 }
 
 /*Блок offers*/
@@ -772,6 +830,8 @@ body {
 
 .orders h3 {
     text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 700;
     color: #000000;
     padding: 0;
@@ -1059,9 +1119,9 @@ body {
 .product-card p {
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     color: #666666;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     white-space: pre-line; 
@@ -1104,6 +1164,7 @@ body {
         
     background-image: url("../img/dec/radio-off.svg");
     background-repeat: no-repeat;
+    outline: medium;
 }
 
 .filtr-radio input[type="radio"]:checked + .radio-indicator {
@@ -1117,6 +1178,7 @@ body {
     background-image: url("../img/dec/radio-on.svg");
     
     background-repeat: no-repeat;
+    outline: medium;
 }
 
 .filtr-checkbox {
@@ -1150,7 +1212,6 @@ body {
     
     background-repeat: no-repeat;
 }
-
 
 .range {
     position: absolute;
@@ -1193,7 +1254,7 @@ body {
     width: 261px;
     height: 81px;
     margin-bottom: 15px;
-    margin-top: 46px;
+    margin-top: 47px;
     border-radius: 3px;
     background-color: #eeeeee;
     text-align: center;    
@@ -1258,25 +1319,25 @@ body {
 }
 
 .sort-list {
-   display: flex; 
-   list-style: none; 
-   padding: 0;
-   margin: 0;
-   margin-top: 60px;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 18px;
-   color: #000000;
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
 }
 
 .sort-item {
-   padding: 0;
-   margin: 0;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 18px;
-   color: #000000;
-   text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 .sort-item a {
@@ -1300,13 +1361,13 @@ body {
 }
 
 .sort-item h3 {
-   padding: 0;
-   margin: 0;
-   font-weight: 700;
-   font-size: 18px;
-   line-height: 18px;
-   color: #000000;
-   text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 
@@ -1412,8 +1473,8 @@ body {
 /*Футер*/
 
 .footer-social {
-   margin-right: 143px;
-   margin-top: 48px;
+    margin-right: 143px;
+    margin-top: 48px;
 }
 
 .main-footer {
@@ -1549,6 +1610,14 @@ body {
     color: #666666;
 }
 
+.tel-on-map {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    text-decoration: none;
+}
+
 .window-on-map p:nth-child(3) {
     margin-right: 46px;
     margin-top: 1px;
@@ -1564,7 +1633,7 @@ body {
 .feedback h2 {
     margin-top: 73px;
     margin-left: 100px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 45px;
     line-height: 45px;
     color: #000000;
@@ -1668,6 +1737,7 @@ body {
     background-image: url("../img/dec/close-cross.svg");
     opacity: 30%;
     border: 0;
+    background-color: #ffffff;
 }
 
 .modal-close:hover {
@@ -1677,8 +1747,6 @@ body {
 .modal-close:active {
     opacity: 10%;
 }
-
-
 
 .contacts {
     padding: 0;
