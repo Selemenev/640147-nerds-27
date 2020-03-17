@@ -52,7 +52,6 @@ img {
 }
 .main-header {
     background-color: #eeeeee;
-    
 }
 
 .catalog-header {
@@ -193,7 +192,7 @@ img {
     cursor: pointer;
 }
 
-.button-on-map {
+.feedback-link {
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -424,12 +423,14 @@ img {
 }
 
 .banner-button:hover,
-.product-card-button:hover {
+.product-card-button:hover,
+.feedback-button:hover {
     background-color:#e74246;
 }
 
 .banner-button:active,
-.product-card-button:active {
+.product-card-button:active,
+.feedback-button:active {
     background-color:#d7373b;
     color: rgba(255, 255, 255, 0.3);
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
@@ -465,11 +466,11 @@ img {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.button-on-map:hover {
+.feedback-link:hover {
     background-color: #e74246;
 }
 
-.button-on-map:active {
+.feedback-link:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
@@ -916,7 +917,6 @@ body {
     color: #000000;
 }
 
-
 .statistics-text {
     font-weight: 400;
     font-size: 16px;
@@ -1049,7 +1049,6 @@ body {
     height: 84px;
     background-image: url("../img/dec/mishka-logo-active.jpg");
 }
-
 
 /*главная-Каталога*/
 
@@ -1538,7 +1537,6 @@ body {
     left: 34px;
     background-image: url("../img/dec/fb-icon.svg");
     background-repeat: no-repeat;
-    
 }
 
 .social-button-insta:after {
@@ -1626,7 +1624,7 @@ body {
 .map-marker {
     position: absolute;
 
-    top:89px;
+    top: 89px;
     left: 820px;
 }
 
@@ -1653,26 +1651,39 @@ body {
     padding: 0;  
 }
 
+.contacts input[type="text"] {
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.your-text textarea {
+    padding: 14px;
+}
+
 .feedback-area {
     box-sizing: border-box;
-    opacity: 50%;
+    
     margin-top: 12px;
+    padding-left: 16px;
     padding: 0;
     width: 760px;
     height: 118px;
     border: 2px solid #d7dcde; 
-    outline: none; 
+    border-radius: 3px;
 }
 
-.login-area {
-    opacity: 50%;
+.login-area { 
+    padding: 14px;
     box-sizing: border-box;
     margin-top: 12px;
     padding: 0;
     width: 360px;
     height: 50px;
     border: 2px solid #d7dcde;
-    outline: none; 
+    border-radius: 3px; 
 }
 
 .login-area:hover,
@@ -1687,15 +1698,14 @@ body {
     border: 2px solid #000000;
 }
 
-.email-area {
-    opacity: 50%;
+.email-area { 
     box-sizing: border-box;
     margin-top: 12px;
     padding: 0;
     width: 360px;
     height: 50px;
     border: 2px solid #d7dcde;
-    outline: none;
+    border-radius: 3px;
 }
 
 .feedback {
@@ -1708,21 +1718,25 @@ body {
     align-items: center;
 }
 
-.feedback-item {
-    position: absolute;
-
-    top: -140px;
+.modal {
+    position: fixed;
+    display: none;
+    top: 230px;
     
     width: 960px;
     height: 590px;
     margin: 0;
 
-    display: flex;
-    flex-direction: column; 
-    align-content: center;
-
     background-color: #ffffff;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-show {
+    display: block;   
+    animation: bounce 0.6s;
+}
+  .modal-error {
+    animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1776,3 +1790,45 @@ body {
     margin-bottom: 47px;
     margin-top: 27px;
 }
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
+
+  
