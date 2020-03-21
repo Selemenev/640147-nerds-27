@@ -114,33 +114,25 @@
           <button class="button product-filter-button" type="submit">Показать</button>
         </form>
       </section>
-      <section class="products">      
+      <section class="products">  
+        <div class="sort-container">
+        <h3>Сортировать:</h3>    
         <ul class="sort-list">
-          <li class="sort-item"> 
-            <h3>Сортировать:</h3>
+           <li class="sort-item">
+            <a href="#"> По цене</a>
            </li>
            <li class="sort-item">
-            <a href="#"> 
-            По цене
-            </a>
+            <a href="#">По типу</a>
            </li>
            <li class="sort-item">
-            <a href="#"> 
-            По типу
-            </a>
-           </li>
-           <li class="sort-item">
-            <a href="#"> 
-            По названию
-            </a>
+            <a href="#">По названию</a>
            </li>  
-           <li class="sort-item">
-            <a class="arrow-down" href="#"></a>
-           </li>
-           <li class="sort-item">
-            <a class="arrow-up" href="#"></a>
-          </li>
-        </ul> 
+          </ul> 
+           <div class="arrows">
+            <a class="arrow-down" href="#" aria-label="сортировка вниз" ></a>          
+            <a class="arrow-up" href="#" aria-label="сортировка вверх"></a>
+          </div>    
+      </div>
         <ul class="catalog-list">
          <li class="catalog-item-sedona">          
            <img src="img/cnt/img-sedona-jpg.jpg" width="360" height="576"
@@ -155,7 +147,7 @@
          <li class="catalog-item">          
            <img src="img/cnt/img-pink-jpg.jpg" width="360" height="576"
             alt="Пинк">   
-            <div class="product-card visually-hidden">
+            <div class="product-card">
             <a class="card-link" href="#">Pink app</a>
              <p>Продуктовый лендинг
               приложения для iOS и Android</p>
@@ -165,7 +157,7 @@
          <li class="catalog-item">          
            <img src="img/cnt/img-barbershop-jpg.jpg" width="360" height="576"
             alt="Барбершоп">  
-            <div class="product-card visually-hidden">
+            <div class="product-card">
               <a class="card-link" href="#">Barbershop</a>
                <p>Сайт салона красоты.
                 Для мужчин, да.</p>
@@ -175,7 +167,7 @@
          <li class="catalog-item">         
            <img src="img/cnt/img-mishka-jpg.jpg" width="360" height="576"
             alt="Мишка"> 
-            <div class="product-card visually-hidden">
+            <div class="product-card">
               <a class="card-link" href="#">Mishka</a>
                <p>Интернет-магазин
                 вязаных игрушек</p>
@@ -185,7 +177,7 @@
          <li class="catalog-item">         
            <img src="img/cnt/img-aplus-jpg.jpg" width="360" height="576"
             alt="Аплюс"> 
-            <div class="product-card visually-hidden">
+            <div class="product-card">
               <a class="card-link" href="#">A plus</a>
                <p>Лендинг курсов повышения 
                 квалификации</p>
@@ -195,7 +187,7 @@
          <li class="catalog-item">        
            <img src="img/cnt/img-kvast-jpg.jpg" width="360" height="576"
             alt="Кваст">  
-            <div class="product-card visually-hidden">
+            <div class="product-card">
               <a class="card-link" href="#">Кваст</a>
                <p>Промо-сайт производителя
                 крафтового кваса</p>
@@ -259,13 +251,15 @@
     <div class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul> 
-       <li>
-         <a class="social-button social-button-vk" href="#"></a>
-       </li>
-       <li><a class="social-button social-button-fb" href="#">      
-      </a></li>
-      <li><a class="social-button social-button-insta" href="#">       
-       </a></li>
+        <li>
+         <a class="social-button social-button-vk" aria-label="ссылка вконтакте" href="#"></a>
+        </li>
+        <li>
+         <a class="social-button social-button-fb" aria-label="ссылка фейсбук" href="#"></a>
+         </li>
+        <li>
+         <a class="social-button social-button-insta" aria-label="ссылка инстаграмм" href="#"></a>
+        </li>
       </ul>  
      </div>
     <div class="discount">
