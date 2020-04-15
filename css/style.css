@@ -352,8 +352,7 @@ img {
     left: -40px;
     width: 15px;
     height: 15px;
-    background-image: url("../img/dec/basket-icon.svg");
-    opacity: 30%;
+    background-image: url("../img/dec/cart-icon.png");
     
 }
 
@@ -760,8 +759,8 @@ body {
     justify-content: space-between;
 
     width: 1160px;
+    height: 264px;
     padding: 0;
-    padding-bottom: 49px;
     margin: 0;
 }
 
@@ -1008,7 +1007,7 @@ body {
 }
 
 .catalog-item::after { 
-    opacity: 12%;
+    opacity: .12;
     top: -40px;
     left: 0px;
     content: "";
@@ -1024,7 +1023,7 @@ body {
     content: "";
     width: 360px;
     height: 231px;
-    background-color: #dbdbdb;
+    background-color: #eeeeee;
     text-align: center;
     display: none;
 }
@@ -1062,7 +1061,7 @@ body {
 }
 
 .catalog-item:hover:after {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .catalog-list {
@@ -1319,20 +1318,15 @@ body {
     color: #000000;
 }
 
-.sort-item {
+.sort-item,
+.sort-item-active {
     padding: 0;
     margin: 0;
     padding-bottom: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #000000;
     text-transform: uppercase;
-}
-
-.sort-item a {
-    text-decoration: none;
-    color: #000000;
 }
 
 .arrows {
@@ -1352,52 +1346,46 @@ body {
 }
 
 .sort-container .arrow-down:hover {
-    opacity: 60%;
+    opacity: .6;
 }
 
 .sort-container .arrow-down:active {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .sort-container .arrow-up {
     display: inline-block;
     background-image: url("../img//dec/icon-up-dir2.svg");
-    opacity: 30%;
     width: 11px;
     height: 10px;
-    opacity: 20%;
+    opacity: .2;
 }
 
 .sort-container .arrow-up:hover {
-    opacity: 60%;
+    opacity: .6;
 }
 
 .sort-container .arrow-up:active {
-    opacity: 100%;
+    opacity: 1;
 }
 
-.sort-item:nth-child(1) {
-    opacity: 100%;
+.sort-item a {
+    text-decoration: none;
+    color: #000000;
+    opacity: .3;
 }
 
-.sort-item:nth-child(1):hover {
-    opacity: 60%;
+.sort-item a:hover {
+    opacity: .6;
 }
 
-.sort-item:nth-child(1):active {
-    opacity: 100%;
+.sort-item a:active {
+    opacity: 1;
 }
 
-.sort-item {
-    opacity: 30%;
-}
-
-.sort-item:hover {
-    opacity: 60%;
-}
-
-.sort-item:active {
-    opacity: 100%;
+.sort-item-active a {
+    color: #000;
+    opacity: 1;
 }
 
 .catalog-columns {
