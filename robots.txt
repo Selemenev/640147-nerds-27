@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /tmp/
+
+Disallow: */core/*
+
+Host: lavkaeda.ru
+
+Sitemap: https://lavkaeda.ru/sitemap.xml
